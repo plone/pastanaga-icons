@@ -1,0 +1,28 @@
+# Node
+node_modules
+coverage
+jsdoc
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+dist
+junit.xml
+eslint.xml
+
+# Other
+.DS_Store
+lighthouse-report.html
+
+# Python
+/api/eggs/
+/api/develop-eggs/
+/api/.installed.cfg
+/api/.mr.developer.cfg
+/api/var/
+/api/bin/
+/api/parts/
+/api/src/
+api/.Python
+api/include
+api/lib
+api/pip-selfcheck.json
