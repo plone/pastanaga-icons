@@ -15,8 +15,8 @@ const defaultSize = '24px';
   selector: '[icon], icon',
   template: `
   <svg
-    [attr.viewBox]="glyph.attributes.viewBox"
-    [attr.xmlns]="glyph.attributes.xmlns"
+    [attr.viewBox]="name.attributes.viewBox"
+    [attr.xmlns]="name.attributes.xmlns"
     [innerHTML]="svgContent"
     [style.height]="height"
     [style.width]="'auto'"
@@ -37,10 +37,10 @@ export class IconComponent implements OnInit {
 
   @Input() color: string;
   @Input() size: string;
-  @Input() glyph;
+  @Input() name;
 
   ngOnInit() {
-    this.svgContent = this.sanitizer.bypassSecurityTrustHtml(this.glyph.content);
+    this.svgContent = this.sanitizer.bypassSecurityTrustHtml(this.name.content);
     this.height = this.size ? this.size : defaultSize;
   }
 

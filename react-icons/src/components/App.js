@@ -14,11 +14,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         {/* Place your icons using the Icon component */}
-        <Icon glyph={Add} />
-        <Icon glyph={Add} size="45px" />
-        <Icon glyph={Add} size="45px" color="red" />
-        <Icon glyph={Plone} size="60px" color="#1782BE" />
-        <Icon glyph={Guillotina} size="60px" color="#EC5528" />
+        <Icon name={Add} />
+        <Icon name={Add} size="45px" />
+        <Icon name={Add} size="45px" color="red" />
+        <Icon name={Plone} size="60px" color="#1782BE" />
+        <Icon name={Guillotina} size="60px" color="#EC5528" />
       </div>
     );
   }

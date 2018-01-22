@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const defaultSize = '24px';
 
-const Icon = ({ glyph, size, color }) => (
+const Icon = ({ name, size, color }) => (
   <svg
-    xmlns={glyph.attributes.xmlns}
-    viewBox={glyph.attributes.viewBox}
+    xmlns={name.attributes.xmlns}
+    viewBox={name.attributes.viewBox}
     style={{ height: size, width: 'auto', fill: color }}
-    dangerouslySetInnerHTML={{ __html: glyph.content }}
+    dangerouslySetInnerHTML={{ __html: name.content }}
   />
 );
 
