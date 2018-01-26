@@ -14,7 +14,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         {/* Place your icons using the Icon component */}
-        <Icon name={Add} />
+        <div style={{ height: '100px' }}>
+          <Icon name={Add} />
+        </div>
         <Icon name={Add} size="45px" />
         <Icon name={Add} size="45px" color="red" />
         <Icon name={Plone} size="60px" color="#1782BE" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const defaultSize = '24px';
+const defaultSize = '100%';
 
 const Icon = ({ name, size, color }) => (
   <svg

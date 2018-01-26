@@ -8,7 +8,7 @@ import {
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { OnInit } from '@angular/core';
 
-const defaultSize = '24px';
+const defaultSize = '100%';
 
 @Component({
   // tslint:disable-next-line:component-selector
