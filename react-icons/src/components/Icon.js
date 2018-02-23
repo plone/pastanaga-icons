@@ -13,6 +13,11 @@ const Icon = ({ name, size, color }) => (
 );
 
 Icon.propTypes = {
+  name: PropTypes.shape({
+    xmlns: PropTypes.string,
+    viewBox: PropTypes.string,
+    content: PropTypes.string,
+  }).isRequired,
   size: PropTypes.string,
   color: PropTypes.string,
 };
