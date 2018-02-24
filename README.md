@@ -22,3 +22,7 @@ Implementations for React and Angular are currently under active development:
 
 - React: https://github.com/plone/plone-react
 - Angular: https://github.com/plone/pastanaga-angular
+
+# Related Posts
+
+https://kitconcept.com/blog/pastanaga-icon-system/
