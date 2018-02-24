@@ -15,6 +15,7 @@
   height: 80px;
   padding: 20px;
 }
+
 .App-header img {
   margin-right: 40px;
 }
@@ -30,17 +31,29 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
 }
 
 .icon-info-wrapper {
-  height: 100px;
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  border-radius: 20px;
+  flex-flow: row;
+  margin: 12px;
+  text-align: center;
+  text-align: left;
+  justify-content: left;
+  width: 160px;
+}
+
+.icon-info-wrapper svg {
+  fill: #4a4a4a;
+  display: inline-block;
+}
+
+.icon-name {
+  font-size: 11px;
+  color: #717171;
+  display: inline-block;
+  padding: 9px;
 }
 
 .filter {
@@ -59,4 +72,44 @@
 
 .filter svg {
   margin-right: 20px;
+}
+
+.disclaimer {
+  margin-bottom: 30px;
+}
+
+.disclaimer img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #767676;
+    height: 80px;
+    padding: 20px;
+  }
+  .App-header img {
+    margin-right: 0;
+  }
+
+  .filter {
+    margin-top: 10px;
+  }
+
+  .catalog {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .catalog {
+    margin: 0 auto;
+    width: 95%;
+  }
 }

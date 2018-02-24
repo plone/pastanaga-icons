@@ -31,7 +31,7 @@ class IconCatalog extends Component {
 """)
 
     for iconname, icon in iconsnames:
-        the_file.write("    {{ name: '{}', component: <Icon name={{{}}} /> }},\n".format(icon, iconname))
+        the_file.write("    {{ name: '{}', component: <Icon name={{{}}} size='36px' /> }},\n".format(icon, iconname))
 
     the_file.write("""
   ];
@@ -54,7 +54,7 @@ class IconCatalog extends Component {
           {this.list
             .filter(item => item.name.includes(this.state.filter))
             .map(item => (
-              <div className="icon-info-wrapper">
+              <div className="icon-info-wrapper" key={item.name}>
                 {item.component}
                 <div className="icon-name">{item.name}</div>
               </div>
