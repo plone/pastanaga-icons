@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react';import Icon from './Icon';import accessibilityIcon from '../icons/accessibility.svg';
+import React, { Component, Fragment } from 'react';
+import Icon from './Icon';
+import accessibilityIcon from '../icons/accessibility.svg';
 import accessibleIcon from '../icons/accessible.svg';
 import add_documentIcon from '../icons/add-document.svg';
 import add_onIcon from '../icons/add-on.svg';
@@ -290,1174 +292,335 @@ import zoom_offIcon from '../icons/zoom-off.svg';
 import zoom_outIcon from '../icons/zoom-out.svg';
 import zoomIcon from '../icons/zoom.svg';
 
-const IconCatalog = () => {
-  return (
-    <Fragment>
-      <div className='icon-info-wrapper'>
-        <Icon name={accessibilityIcon} />
-        <div className='icon-name'>accessibility.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={accessibleIcon} />
-        <div className='icon-name'>accessible.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={add_documentIcon} />
-        <div className='icon-name'>add-document.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={add_onIcon} />
-        <div className='icon-name'>add-on.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={addIcon} />
-        <div className='icon-name'>add.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={aheadIcon} />
-        <div className='icon-name'>ahead.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={alarmIcon} />
-        <div className='icon-name'>alarm.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={alertIcon} />
-        <div className='icon-name'>alert.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={align_centerIcon} />
-        <div className='icon-name'>align-center.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={align_justifyIcon} />
-        <div className='icon-name'>align-justify.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={align_leftIcon} />
-        <div className='icon-name'>align-left.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={align_rightIcon} />
-        <div className='icon-name'>align-right.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={applicationIcon} />
-        <div className='icon-name'>application.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={appsIcon} />
-        <div className='icon-name'>apps.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={attachmentIcon} />
-        <div className='icon-name'>attachment.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={audioIcon} />
-        <div className='icon-name'>audio.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={back_downIcon} />
-        <div className='icon-name'>back-down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={backIcon} />
-        <div className='icon-name'>back.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={backspace_keyIcon} />
-        <div className='icon-name'>backspace-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={backspaceIcon} />
-        <div className='icon-name'>backspace.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={beginningIcon} />
-        <div className='icon-name'>beginning.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={bell_ringingIcon} />
-        <div className='icon-name'>bell-ringing.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={bellIcon} />
-        <div className='icon-name'>bell.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={binderIcon} />
-        <div className='icon-name'>binder.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={blankIcon} />
-        <div className='icon-name'>blank.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={blockIcon} />
-        <div className='icon-name'>block.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={blog_entryIcon} />
-        <div className='icon-name'>blog-entry.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={blogIcon} />
-        <div className='icon-name'>blog.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={boldIcon} />
-        <div className='icon-name'>bold.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={bookIcon} />
-        <div className='icon-name'>book.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={bookmarkIcon} />
-        <div className='icon-name'>bookmark.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={border_styleIcon} />
-        <div className='icon-name'>border-style.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={border_widthIcon} />
-        <div className='icon-name'>border-width.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={briefcaseIcon} />
-        <div className='icon-name'>briefcase.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={calendarIcon} />
-        <div className='icon-name'>calendar.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cameraIcon} />
-        <div className='icon-name'>camera.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cap_locks_keyIcon} />
-        <div className='icon-name'>cap-locks-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={caps_lockIcon} />
-        <div className='icon-name'>caps-lock.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cautionIcon} />
-        <div className='icon-name'>caution.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cdIcon} />
-        <div className='icon-name'>cd.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cellIcon} />
-        <div className='icon-name'>cell.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={checkIcon} />
-        <div className='icon-name'>check.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={checkbox_checkedIcon} />
-        <div className='icon-name'>checkbox-checked.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={checkbox_disabledIcon} />
-        <div className='icon-name'>checkbox-disabled.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={checkbox_indeterminateIcon} />
-        <div className='icon-name'>checkbox-indeterminate.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={checkbox_uncheckedIcon} />
-        <div className='icon-name'>checkbox-unchecked.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={chronoIcon} />
-        <div className='icon-name'>chrono.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_bottomIcon} />
-        <div className='icon-name'>circle-bottom.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_dismissIcon} />
-        <div className='icon-name'>circle-dismiss.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_leftIcon} />
-        <div className='icon-name'>circle-left.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_menuIcon} />
-        <div className='icon-name'>circle-menu.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_minusIcon} />
-        <div className='icon-name'>circle-minus.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_plusIcon} />
-        <div className='icon-name'>circle-plus.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_rightIcon} />
-        <div className='icon-name'>circle-right.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={circle_topIcon} />
-        <div className='icon-name'>circle-top.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cleanIcon} />
-        <div className='icon-name'>clean.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={clearIcon} />
-        <div className='icon-name'>clear.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={clockIcon} />
-        <div className='icon-name'>clock.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cloudIcon} />
-        <div className='icon-name'>cloud.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={codeIcon} />
-        <div className='icon-name'>code.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={collapse_downIcon} />
-        <div className='icon-name'>collapse-down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={collapse_upIcon} />
-        <div className='icon-name'>collapse-up.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={collectionIcon} />
-        <div className='icon-name'>collection.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={columnIcon} />
-        <div className='icon-name'>column.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={commandIcon} />
-        <div className='icon-name'>command.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={commentIcon} />
-        <div className='icon-name'>comment.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={compare_downIcon} />
-        <div className='icon-name'>compare-down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={compare_upIcon} />
-        <div className='icon-name'>compare-up.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={compareIcon} />
-        <div className='icon-name'>compare.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={computerIcon} />
-        <div className='icon-name'>computer.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={configuration_appIcon} />
-        <div className='icon-name'>configuration-app.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={configurationIcon} />
-        <div className='icon-name'>configuration.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={connectorIcon} />
-        <div className='icon-name'>connector.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={consoleIcon} />
-        <div className='icon-name'>console.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={content_existingIcon} />
-        <div className='icon-name'>content-existing.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={content_listingIcon} />
-        <div className='icon-name'>content-listing.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={contentIcon} />
-        <div className='icon-name'>content.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={copyIcon} />
-        <div className='icon-name'>copy.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={crownIcon} />
-        <div className='icon-name'>crown.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={cutIcon} />
-        <div className='icon-name'>cut.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={delete_keyIcon} />
-        <div className='icon-name'>delete-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={deleteIcon} />
-        <div className='icon-name'>delete.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={delightedIcon} />
-        <div className='icon-name'>delighted.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={disconnectedIcon} />
-        <div className='icon-name'>disconnected.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={discussionIcon} />
-        <div className='icon-name'>discussion.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={dissatisfiedIcon} />
-        <div className='icon-name'>dissatisfied.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={dotsIcon} />
-        <div className='icon-name'>dots.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={doument_detailsIcon} />
-        <div className='icon-name'>doument-details.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={down_keyIcon} />
-        <div className='icon-name'>down-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={downIcon} />
-        <div className='icon-name'>down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={downloadIcon} />
-        <div className='icon-name'>download.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={dragIcon} />
-        <div className='icon-name'>drag.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={editingIcon} />
-        <div className='icon-name'>editing.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={emailIcon} />
-        <div className='icon-name'>email.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={endIcon} />
-        <div className='icon-name'>end.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={enterIcon} />
-        <div className='icon-name'>enter.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={envelopeIcon} />
-        <div className='icon-name'>envelope.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={ereaserIcon} />
-        <div className='icon-name'>ereaser.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={errorIcon} />
-        <div className='icon-name'>error.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={eventIcon} />
-        <div className='icon-name'>event.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={exclamationIcon} />
-        <div className='icon-name'>exclamation.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={fast_forwardIcon} />
-        <div className='icon-name'>fast-forward.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={fileIcon} />
-        <div className='icon-name'>file.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={filterIcon} />
-        <div className='icon-name'>filter.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={find_replaceIcon} />
-        <div className='icon-name'>find-replace.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={finger_printIcon} />
-        <div className='icon-name'>finger-print.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={first_aidsIcon} />
-        <div className='icon-name'>first-aids.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={firstIcon} />
-        <div className='icon-name'>first.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={flagIcon} />
-        <div className='icon-name'>flag.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={flashIcon} />
-        <div className='icon-name'>flash.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={folderIcon} />
-        <div className='icon-name'>folder.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={forbiddenIcon} />
-        <div className='icon-name'>forbidden.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={formIcon} />
-        <div className='icon-name'>form.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={format_clearIcon} />
-        <div className='icon-name'>format-clear.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={formatIcon} />
-        <div className='icon-name'>format.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={freedomIcon} />
-        <div className='icon-name'>freedom.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={frustratedIcon} />
-        <div className='icon-name'>frustrated.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={fullscreenIcon} />
-        <div className='icon-name'>fullscreen.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={functionIcon} />
-        <div className='icon-name'>function.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={globeIcon} />
-        <div className='icon-name'>globe.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={groupIcon} />
-        <div className='icon-name'>group.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={guillotinaIcon} />
-        <div className='icon-name'>guillotina.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={half_starIcon} />
-        <div className='icon-name'>half-star.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={headingIcon} />
-        <div className='icon-name'>heading.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={headset_microphoneIcon} />
-        <div className='icon-name'>headset-microphone.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={headsetIcon} />
-        <div className='icon-name'>headset.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={heartIcon} />
-        <div className='icon-name'>heart.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={helpIcon} />
-        <div className='icon-name'>help.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={hideIcon} />
-        <div className='icon-name'>hide.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={highlighterIcon} />
-        <div className='icon-name'>highlighter.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={homeIcon} />
-        <div className='icon-name'>home.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={horizontalIcon} />
-        <div className='icon-name'>horizontal.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={imageIcon} />
-        <div className='icon-name'>image.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={imagesIcon} />
-        <div className='icon-name'>images.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={inboxIcon} />
-        <div className='icon-name'>inbox.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={indentIcon} />
-        <div className='icon-name'>indent.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={infoIcon} />
-        <div className='icon-name'>info.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={interfaceIcon} />
-        <div className='icon-name'>interface.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={italicIcon} />
-        <div className='icon-name'>italic.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={keyIcon} />
-        <div className='icon-name'>key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={keyboard_hideIcon} />
-        <div className='icon-name'>keyboard-hide.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={keyboardIcon} />
-        <div className='icon-name'>keyboard.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={languageIcon} />
-        <div className='icon-name'>language.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={laptopIcon} />
-        <div className='icon-name'>laptop.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={lastIcon} />
-        <div className='icon-name'>last.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={left_keyIcon} />
-        <div className='icon-name'>left-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={linkIcon} />
-        <div className='icon-name'>link.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={list_bulletIcon} />
-        <div className='icon-name'>list-bullet.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={list_numberedIcon} />
-        <div className='icon-name'>list-numbered.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={lock_offIcon} />
-        <div className='icon-name'>lock-off.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={lockIcon} />
-        <div className='icon-name'>lock.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={log_outIcon} />
-        <div className='icon-name'>log-out.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={maintenanceIcon} />
-        <div className='icon-name'>maintenance.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={megaphoneIcon} />
-        <div className='icon-name'>megaphone.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={menuIcon} />
-        <div className='icon-name'>menu.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={microphone_offIcon} />
-        <div className='icon-name'>microphone-off.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={microphoneIcon} />
-        <div className='icon-name'>microphone.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={mistakeIcon} />
-        <div className='icon-name'>mistake.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={mobileIcon} />
-        <div className='icon-name'>mobile.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={moreIcon} />
-        <div className='icon-name'>more.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={mouseIcon} />
-        <div className='icon-name'>mouse.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={move_downIcon} />
-        <div className='icon-name'>move-down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={move_firstIcon} />
-        <div className='icon-name'>move-first.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={move_lastIcon} />
-        <div className='icon-name'>move-last.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={move_upIcon} />
-        <div className='icon-name'>move-up.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={moveIcon} />
-        <div className='icon-name'>move.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={navIcon} />
-        <div className='icon-name'>nav.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={navigationIcon} />
-        <div className='icon-name'>navigation.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={neutralIcon} />
-        <div className='icon-name'>neutral.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={newsIcon} />
-        <div className='icon-name'>news.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={nibIcon} />
-        <div className='icon-name'>nib.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={no_entryIcon} />
-        <div className='icon-name'>no-entry.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={openIcon} />
-        <div className='icon-name'>open.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={openingIcon} />
-        <div className='icon-name'>opening.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={optionIcon} />
-        <div className='icon-name'>option.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={outdentIcon} />
-        <div className='icon-name'>outdent.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={packIcon} />
-        <div className='icon-name'>pack.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={pageIcon} />
-        <div className='icon-name'>page.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={paintIcon} />
-        <div className='icon-name'>paint.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={pasteIcon} />
-        <div className='icon-name'>paste.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={pauseIcon} />
-        <div className='icon-name'>pause.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={paymentIcon} />
-        <div className='icon-name'>payment.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={penIcon} />
-        <div className='icon-name'>pen.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={pencilIcon} />
-        <div className='icon-name'>pencil.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={pendingIcon} />
-        <div className='icon-name'>pending.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={playIcon} />
-        <div className='icon-name'>play.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={ploneIcon} />
-        <div className='icon-name'>plone.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={printerIcon} />
-        <div className='icon-name'>printer.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={propertiesIcon} />
-        <div className='icon-name'>properties.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={radio_checkedIcon} />
-        <div className='icon-name'>radio-checked.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={radio_disabledIcon} />
-        <div className='icon-name'>radio-disabled.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={radio_indeterminateIcon} />
-        <div className='icon-name'>radio-indeterminate.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={radio_uncheckedIcon} />
-        <div className='icon-name'>radio-unchecked.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={radioIcon} />
-        <div className='icon-name'>radio.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={randomIcon} />
-        <div className='icon-name'>random.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={readyIcon} />
-        <div className='icon-name'>ready.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={recent_changesIcon} />
-        <div className='icon-name'>recent-changes.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={recordIcon} />
-        <div className='icon-name'>record.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={redoIcon} />
-        <div className='icon-name'>redo.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={refreshIcon} />
-        <div className='icon-name'>refresh.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={registry_resourcesIcon} />
-        <div className='icon-name'>registry-resources.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={registryIcon} />
-        <div className='icon-name'>registry.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={reloadIcon} />
-        <div className='icon-name'>reload.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={removeIcon} />
-        <div className='icon-name'>remove.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={renameIcon} />
-        <div className='icon-name'>rename.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={repeatIcon} />
-        <div className='icon-name'>repeat.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={replaceIcon} />
-        <div className='icon-name'>replace.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={resetIcon} />
-        <div className='icon-name'>reset.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={restoreIcon} />
-        <div className='icon-name'>restore.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={retractIcon} />
-        <div className='icon-name'>retract.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={rewindIcon} />
-        <div className='icon-name'>rewind.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={right_keyIcon} />
-        <div className='icon-name'>right-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={rollerIcon} />
-        <div className='icon-name'>roller.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={rowIcon} />
-        <div className='icon-name'>row.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={rssIcon} />
-        <div className='icon-name'>rss.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={ruleIcon} />
-        <div className='icon-name'>rule.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={rulerIcon} />
-        <div className='icon-name'>ruler.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={satisfiedIcon} />
-        <div className='icon-name'>satisfied.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={saveIcon} />
-        <div className='icon-name'>save.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={savingIcon} />
-        <div className='icon-name'>saving.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={scannerIcon} />
-        <div className='icon-name'>scanner.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={screenIcon} />
-        <div className='icon-name'>screen.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={securityIcon} />
-        <div className='icon-name'>security.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={select_allIcon} />
-        <div className='icon-name'>select-all.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={semaphoreIcon} />
-        <div className='icon-name'>semaphore.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={serverIcon} />
-        <div className='icon-name'>server.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={settingsIcon} />
-        <div className='icon-name'>settings.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={shareIcon} />
-        <div className='icon-name'>share.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={shift_keyIcon} />
-        <div className='icon-name'>shift-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={shiftIcon} />
-        <div className='icon-name'>shift.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={show_blocksIcon} />
-        <div className='icon-name'>show-blocks.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={showIcon} />
-        <div className='icon-name'>show.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={sort_downIcon} />
-        <div className='icon-name'>sort-down.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={sort_upIcon} />
-        <div className='icon-name'>sort-up.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={spacebarIcon} />
-        <div className='icon-name'>spacebar.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={special_characterIcon} />
-        <div className='icon-name'>special-character.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={sprayIcon} />
-        <div className='icon-name'>spray.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={star_emptyIcon} />
-        <div className='icon-name'>star-empty.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={starIcon} />
-        <div className='icon-name'>star.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={stateIcon} />
-        <div className='icon-name'>state.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={stopIcon} />
-        <div className='icon-name'>stop.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={strickthroughIcon} />
-        <div className='icon-name'>strickthrough.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={sub_leftIcon} />
-        <div className='icon-name'>sub-left.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={sub_rightIcon} />
-        <div className='icon-name'>sub-right.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={subheadingIcon} />
-        <div className='icon-name'>subheading.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={subindexIcon} />
-        <div className='icon-name'>subindex.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={superindexIcon} />
-        <div className='icon-name'>superindex.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={syncIcon} />
-        <div className='icon-name'>sync.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tab_backwardsIcon} />
-        <div className='icon-name'>tab-backwards.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tabIcon} />
-        <div className='icon-name'>tab.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={table_headerIcon} />
-        <div className='icon-name'>table-header.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tableIcon} />
-        <div className='icon-name'>table.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tabletIcon} />
-        <div className='icon-name'>tablet.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tagIcon} />
-        <div className='icon-name'>tag.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={targetIcon} />
-        <div className='icon-name'>target.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={televisionIcon} />
-        <div className='icon-name'>television.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={textIcon} />
-        <div className='icon-name'>text.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={themeIcon} />
-        <div className='icon-name'>theme.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tinyIcon} />
-        <div className='icon-name'>tiny.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tocIcon} />
-        <div className='icon-name'>toc.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={translateIcon} />
-        <div className='icon-name'>translate.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={triangleIcon} />
-        <div className='icon-name'>triangle.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={trolley_fullIcon} />
-        <div className='icon-name'>trolley-full.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={trolleyIcon} />
-        <div className='icon-name'>trolley.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={trophyIcon} />
-        <div className='icon-name'>trophy.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={tuneIcon} />
-        <div className='icon-name'>tune.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={underlineIcon} />
-        <div className='icon-name'>underline.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={undoIcon} />
-        <div className='icon-name'>undo.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={unlinkIcon} />
-        <div className='icon-name'>unlink.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={unlockIcon} />
-        <div className='icon-name'>unlock.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={up_keyIcon} />
-        <div className='icon-name'>up-key.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={upIcon} />
-        <div className='icon-name'>up.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={uploadIcon} />
-        <div className='icon-name'>upload.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={usbIcon} />
-        <div className='icon-name'>usb.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={userIcon} />
-        <div className='icon-name'>user.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={verticalIcon} />
-        <div className='icon-name'>vertical.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={videoIcon} />
-        <div className='icon-name'>video.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={videocamera_offIcon} />
-        <div className='icon-name'>videocamera-off.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={videocameraIcon} />
-        <div className='icon-name'>videocamera.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={volume_lowIcon} />
-        <div className='icon-name'>volume-low.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={volume_offIcon} />
-        <div className='icon-name'>volume-off.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={volumeIcon} />
-        <div className='icon-name'>volume.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={warningIcon} />
-        <div className='icon-name'>warning.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={watch_sideIcon} />
-        <div className='icon-name'>watch-side.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={watchIcon} />
-        <div className='icon-name'>watch.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={worldIcon} />
-        <div className='icon-name'>world.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={yieldIcon} />
-        <div className='icon-name'>yield.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={zoom_inIcon} />
-        <div className='icon-name'>zoom-in.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={zoom_offIcon} />
-        <div className='icon-name'>zoom-off.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={zoom_outIcon} />
-        <div className='icon-name'>zoom-out.svg</div>
-      </div>
-      <div className='icon-info-wrapper'>
-        <Icon name={zoomIcon} />
-        <div className='icon-name'>zoom.svg</div>
-      </div>
-    </Fragment>
-  )
+class IconCatalog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { filter: '' };
+  }
+
+  list = [
+    { name: 'accessibility.svg', component: <Icon name={accessibilityIcon} /> },
+    { name: 'accessible.svg', component: <Icon name={accessibleIcon} /> },
+    { name: 'add-document.svg', component: <Icon name={add_documentIcon} /> },
+    { name: 'add-on.svg', component: <Icon name={add_onIcon} /> },
+    { name: 'add.svg', component: <Icon name={addIcon} /> },
+    { name: 'ahead.svg', component: <Icon name={aheadIcon} /> },
+    { name: 'alarm.svg', component: <Icon name={alarmIcon} /> },
+    { name: 'alert.svg', component: <Icon name={alertIcon} /> },
+    { name: 'align-center.svg', component: <Icon name={align_centerIcon} /> },
+    { name: 'align-justify.svg', component: <Icon name={align_justifyIcon} /> },
+    { name: 'align-left.svg', component: <Icon name={align_leftIcon} /> },
+    { name: 'align-right.svg', component: <Icon name={align_rightIcon} /> },
+    { name: 'application.svg', component: <Icon name={applicationIcon} /> },
+    { name: 'apps.svg', component: <Icon name={appsIcon} /> },
+    { name: 'attachment.svg', component: <Icon name={attachmentIcon} /> },
+    { name: 'audio.svg', component: <Icon name={audioIcon} /> },
+    { name: 'back-down.svg', component: <Icon name={back_downIcon} /> },
+    { name: 'back.svg', component: <Icon name={backIcon} /> },
+    { name: 'backspace-key.svg', component: <Icon name={backspace_keyIcon} /> },
+    { name: 'backspace.svg', component: <Icon name={backspaceIcon} /> },
+    { name: 'beginning.svg', component: <Icon name={beginningIcon} /> },
+    { name: 'bell-ringing.svg', component: <Icon name={bell_ringingIcon} /> },
+    { name: 'bell.svg', component: <Icon name={bellIcon} /> },
+    { name: 'binder.svg', component: <Icon name={binderIcon} /> },
+    { name: 'blank.svg', component: <Icon name={blankIcon} /> },
+    { name: 'block.svg', component: <Icon name={blockIcon} /> },
+    { name: 'blog-entry.svg', component: <Icon name={blog_entryIcon} /> },
+    { name: 'blog.svg', component: <Icon name={blogIcon} /> },
+    { name: 'bold.svg', component: <Icon name={boldIcon} /> },
+    { name: 'book.svg', component: <Icon name={bookIcon} /> },
+    { name: 'bookmark.svg', component: <Icon name={bookmarkIcon} /> },
+    { name: 'border-style.svg', component: <Icon name={border_styleIcon} /> },
+    { name: 'border-width.svg', component: <Icon name={border_widthIcon} /> },
+    { name: 'briefcase.svg', component: <Icon name={briefcaseIcon} /> },
+    { name: 'calendar.svg', component: <Icon name={calendarIcon} /> },
+    { name: 'camera.svg', component: <Icon name={cameraIcon} /> },
+    { name: 'cap-locks-key.svg', component: <Icon name={cap_locks_keyIcon} /> },
+    { name: 'caps-lock.svg', component: <Icon name={caps_lockIcon} /> },
+    { name: 'caution.svg', component: <Icon name={cautionIcon} /> },
+    { name: 'cd.svg', component: <Icon name={cdIcon} /> },
+    { name: 'cell.svg', component: <Icon name={cellIcon} /> },
+    { name: 'check.svg', component: <Icon name={checkIcon} /> },
+    { name: 'checkbox-checked.svg', component: <Icon name={checkbox_checkedIcon} /> },
+    { name: 'checkbox-disabled.svg', component: <Icon name={checkbox_disabledIcon} /> },
+    { name: 'checkbox-indeterminate.svg', component: <Icon name={checkbox_indeterminateIcon} /> },
+    { name: 'checkbox-unchecked.svg', component: <Icon name={checkbox_uncheckedIcon} /> },
+    { name: 'chrono.svg', component: <Icon name={chronoIcon} /> },
+    { name: 'circle-bottom.svg', component: <Icon name={circle_bottomIcon} /> },
+    { name: 'circle-dismiss.svg', component: <Icon name={circle_dismissIcon} /> },
+    { name: 'circle-left.svg', component: <Icon name={circle_leftIcon} /> },
+    { name: 'circle-menu.svg', component: <Icon name={circle_menuIcon} /> },
+    { name: 'circle-minus.svg', component: <Icon name={circle_minusIcon} /> },
+    { name: 'circle-plus.svg', component: <Icon name={circle_plusIcon} /> },
+    { name: 'circle-right.svg', component: <Icon name={circle_rightIcon} /> },
+    { name: 'circle-top.svg', component: <Icon name={circle_topIcon} /> },
+    { name: 'clean.svg', component: <Icon name={cleanIcon} /> },
+    { name: 'clear.svg', component: <Icon name={clearIcon} /> },
+    { name: 'clock.svg', component: <Icon name={clockIcon} /> },
+    { name: 'cloud.svg', component: <Icon name={cloudIcon} /> },
+    { name: 'code.svg', component: <Icon name={codeIcon} /> },
+    { name: 'collapse-down.svg', component: <Icon name={collapse_downIcon} /> },
+    { name: 'collapse-up.svg', component: <Icon name={collapse_upIcon} /> },
+    { name: 'collection.svg', component: <Icon name={collectionIcon} /> },
+    { name: 'column.svg', component: <Icon name={columnIcon} /> },
+    { name: 'command.svg', component: <Icon name={commandIcon} /> },
+    { name: 'comment.svg', component: <Icon name={commentIcon} /> },
+    { name: 'compare-down.svg', component: <Icon name={compare_downIcon} /> },
+    { name: 'compare-up.svg', component: <Icon name={compare_upIcon} /> },
+    { name: 'compare.svg', component: <Icon name={compareIcon} /> },
+    { name: 'computer.svg', component: <Icon name={computerIcon} /> },
+    { name: 'configuration-app.svg', component: <Icon name={configuration_appIcon} /> },
+    { name: 'configuration.svg', component: <Icon name={configurationIcon} /> },
+    { name: 'connector.svg', component: <Icon name={connectorIcon} /> },
+    { name: 'console.svg', component: <Icon name={consoleIcon} /> },
+    { name: 'content-existing.svg', component: <Icon name={content_existingIcon} /> },
+    { name: 'content-listing.svg', component: <Icon name={content_listingIcon} /> },
+    { name: 'content.svg', component: <Icon name={contentIcon} /> },
+    { name: 'copy.svg', component: <Icon name={copyIcon} /> },
+    { name: 'crown.svg', component: <Icon name={crownIcon} /> },
+    { name: 'cut.svg', component: <Icon name={cutIcon} /> },
+    { name: 'delete-key.svg', component: <Icon name={delete_keyIcon} /> },
+    { name: 'delete.svg', component: <Icon name={deleteIcon} /> },
+    { name: 'delighted.svg', component: <Icon name={delightedIcon} /> },
+    { name: 'disconnected.svg', component: <Icon name={disconnectedIcon} /> },
+    { name: 'discussion.svg', component: <Icon name={discussionIcon} /> },
+    { name: 'dissatisfied.svg', component: <Icon name={dissatisfiedIcon} /> },
+    { name: 'dots.svg', component: <Icon name={dotsIcon} /> },
+    { name: 'doument-details.svg', component: <Icon name={doument_detailsIcon} /> },
+    { name: 'down-key.svg', component: <Icon name={down_keyIcon} /> },
+    { name: 'down.svg', component: <Icon name={downIcon} /> },
+    { name: 'download.svg', component: <Icon name={downloadIcon} /> },
+    { name: 'drag.svg', component: <Icon name={dragIcon} /> },
+    { name: 'editing.svg', component: <Icon name={editingIcon} /> },
+    { name: 'email.svg', component: <Icon name={emailIcon} /> },
+    { name: 'end.svg', component: <Icon name={endIcon} /> },
+    { name: 'enter.svg', component: <Icon name={enterIcon} /> },
+    { name: 'envelope.svg', component: <Icon name={envelopeIcon} /> },
+    { name: 'ereaser.svg', component: <Icon name={ereaserIcon} /> },
+    { name: 'error.svg', component: <Icon name={errorIcon} /> },
+    { name: 'event.svg', component: <Icon name={eventIcon} /> },
+    { name: 'exclamation.svg', component: <Icon name={exclamationIcon} /> },
+    { name: 'fast-forward.svg', component: <Icon name={fast_forwardIcon} /> },
+    { name: 'file.svg', component: <Icon name={fileIcon} /> },
+    { name: 'filter.svg', component: <Icon name={filterIcon} /> },
+    { name: 'find-replace.svg', component: <Icon name={find_replaceIcon} /> },
+    { name: 'finger-print.svg', component: <Icon name={finger_printIcon} /> },
+    { name: 'first-aids.svg', component: <Icon name={first_aidsIcon} /> },
+    { name: 'first.svg', component: <Icon name={firstIcon} /> },
+    { name: 'flag.svg', component: <Icon name={flagIcon} /> },
+    { name: 'flash.svg', component: <Icon name={flashIcon} /> },
+    { name: 'folder.svg', component: <Icon name={folderIcon} /> },
+    { name: 'forbidden.svg', component: <Icon name={forbiddenIcon} /> },
+    { name: 'form.svg', component: <Icon name={formIcon} /> },
+    { name: 'format-clear.svg', component: <Icon name={format_clearIcon} /> },
+    { name: 'format.svg', component: <Icon name={formatIcon} /> },
+    { name: 'freedom.svg', component: <Icon name={freedomIcon} /> },
+    { name: 'frustrated.svg', component: <Icon name={frustratedIcon} /> },
+    { name: 'fullscreen.svg', component: <Icon name={fullscreenIcon} /> },
+    { name: 'function.svg', component: <Icon name={functionIcon} /> },
+    { name: 'globe.svg', component: <Icon name={globeIcon} /> },
+    { name: 'group.svg', component: <Icon name={groupIcon} /> },
+    { name: 'guillotina.svg', component: <Icon name={guillotinaIcon} /> },
+    { name: 'half-star.svg', component: <Icon name={half_starIcon} /> },
+    { name: 'heading.svg', component: <Icon name={headingIcon} /> },
+    { name: 'headset-microphone.svg', component: <Icon name={headset_microphoneIcon} /> },
+    { name: 'headset.svg', component: <Icon name={headsetIcon} /> },
+    { name: 'heart.svg', component: <Icon name={heartIcon} /> },
+    { name: 'help.svg', component: <Icon name={helpIcon} /> },
+    { name: 'hide.svg', component: <Icon name={hideIcon} /> },
+    { name: 'highlighter.svg', component: <Icon name={highlighterIcon} /> },
+    { name: 'home.svg', component: <Icon name={homeIcon} /> },
+    { name: 'horizontal.svg', component: <Icon name={horizontalIcon} /> },
+    { name: 'image.svg', component: <Icon name={imageIcon} /> },
+    { name: 'images.svg', component: <Icon name={imagesIcon} /> },
+    { name: 'inbox.svg', component: <Icon name={inboxIcon} /> },
+    { name: 'indent.svg', component: <Icon name={indentIcon} /> },
+    { name: 'info.svg', component: <Icon name={infoIcon} /> },
+    { name: 'interface.svg', component: <Icon name={interfaceIcon} /> },
+    { name: 'italic.svg', component: <Icon name={italicIcon} /> },
+    { name: 'key.svg', component: <Icon name={keyIcon} /> },
+    { name: 'keyboard-hide.svg', component: <Icon name={keyboard_hideIcon} /> },
+    { name: 'keyboard.svg', component: <Icon name={keyboardIcon} /> },
+    { name: 'language.svg', component: <Icon name={languageIcon} /> },
+    { name: 'laptop.svg', component: <Icon name={laptopIcon} /> },
+    { name: 'last.svg', component: <Icon name={lastIcon} /> },
+    { name: 'left-key.svg', component: <Icon name={left_keyIcon} /> },
+    { name: 'link.svg', component: <Icon name={linkIcon} /> },
+    { name: 'list-bullet.svg', component: <Icon name={list_bulletIcon} /> },
+    { name: 'list-numbered.svg', component: <Icon name={list_numberedIcon} /> },
+    { name: 'lock-off.svg', component: <Icon name={lock_offIcon} /> },
+    { name: 'lock.svg', component: <Icon name={lockIcon} /> },
+    { name: 'log-out.svg', component: <Icon name={log_outIcon} /> },
+    { name: 'maintenance.svg', component: <Icon name={maintenanceIcon} /> },
+    { name: 'megaphone.svg', component: <Icon name={megaphoneIcon} /> },
+    { name: 'menu.svg', component: <Icon name={menuIcon} /> },
+    { name: 'microphone-off.svg', component: <Icon name={microphone_offIcon} /> },
+    { name: 'microphone.svg', component: <Icon name={microphoneIcon} /> },
+    { name: 'mistake.svg', component: <Icon name={mistakeIcon} /> },
+    { name: 'mobile.svg', component: <Icon name={mobileIcon} /> },
+    { name: 'more.svg', component: <Icon name={moreIcon} /> },
+    { name: 'mouse.svg', component: <Icon name={mouseIcon} /> },
+    { name: 'move-down.svg', component: <Icon name={move_downIcon} /> },
+    { name: 'move-first.svg', component: <Icon name={move_firstIcon} /> },
+    { name: 'move-last.svg', component: <Icon name={move_lastIcon} /> },
+    { name: 'move-up.svg', component: <Icon name={move_upIcon} /> },
+    { name: 'move.svg', component: <Icon name={moveIcon} /> },
+    { name: 'nav.svg', component: <Icon name={navIcon} /> },
+    { name: 'navigation.svg', component: <Icon name={navigationIcon} /> },
+    { name: 'neutral.svg', component: <Icon name={neutralIcon} /> },
+    { name: 'news.svg', component: <Icon name={newsIcon} /> },
+    { name: 'nib.svg', component: <Icon name={nibIcon} /> },
+    { name: 'no-entry.svg', component: <Icon name={no_entryIcon} /> },
+    { name: 'open.svg', component: <Icon name={openIcon} /> },
+    { name: 'opening.svg', component: <Icon name={openingIcon} /> },
+    { name: 'option.svg', component: <Icon name={optionIcon} /> },
+    { name: 'outdent.svg', component: <Icon name={outdentIcon} /> },
+    { name: 'pack.svg', component: <Icon name={packIcon} /> },
+    { name: 'page.svg', component: <Icon name={pageIcon} /> },
+    { name: 'paint.svg', component: <Icon name={paintIcon} /> },
+    { name: 'paste.svg', component: <Icon name={pasteIcon} /> },
+    { name: 'pause.svg', component: <Icon name={pauseIcon} /> },
+    { name: 'payment.svg', component: <Icon name={paymentIcon} /> },
+    { name: 'pen.svg', component: <Icon name={penIcon} /> },
+    { name: 'pencil.svg', component: <Icon name={pencilIcon} /> },
+    { name: 'pending.svg', component: <Icon name={pendingIcon} /> },
+    { name: 'play.svg', component: <Icon name={playIcon} /> },
+    { name: 'plone.svg', component: <Icon name={ploneIcon} /> },
+    { name: 'printer.svg', component: <Icon name={printerIcon} /> },
+    { name: 'properties.svg', component: <Icon name={propertiesIcon} /> },
+    { name: 'radio-checked.svg', component: <Icon name={radio_checkedIcon} /> },
+    { name: 'radio-disabled.svg', component: <Icon name={radio_disabledIcon} /> },
+    { name: 'radio-indeterminate.svg', component: <Icon name={radio_indeterminateIcon} /> },
+    { name: 'radio-unchecked.svg', component: <Icon name={radio_uncheckedIcon} /> },
+    { name: 'radio.svg', component: <Icon name={radioIcon} /> },
+    { name: 'random.svg', component: <Icon name={randomIcon} /> },
+    { name: 'ready.svg', component: <Icon name={readyIcon} /> },
+    { name: 'recent-changes.svg', component: <Icon name={recent_changesIcon} /> },
+    { name: 'record.svg', component: <Icon name={recordIcon} /> },
+    { name: 'redo.svg', component: <Icon name={redoIcon} /> },
+    { name: 'refresh.svg', component: <Icon name={refreshIcon} /> },
+    { name: 'registry-resources.svg', component: <Icon name={registry_resourcesIcon} /> },
+    { name: 'registry.svg', component: <Icon name={registryIcon} /> },
+    { name: 'reload.svg', component: <Icon name={reloadIcon} /> },
+    { name: 'remove.svg', component: <Icon name={removeIcon} /> },
+    { name: 'rename.svg', component: <Icon name={renameIcon} /> },
+    { name: 'repeat.svg', component: <Icon name={repeatIcon} /> },
+    { name: 'replace.svg', component: <Icon name={replaceIcon} /> },
+    { name: 'reset.svg', component: <Icon name={resetIcon} /> },
+    { name: 'restore.svg', component: <Icon name={restoreIcon} /> },
+    { name: 'retract.svg', component: <Icon name={retractIcon} /> },
+    { name: 'rewind.svg', component: <Icon name={rewindIcon} /> },
+    { name: 'right-key.svg', component: <Icon name={right_keyIcon} /> },
+    { name: 'roller.svg', component: <Icon name={rollerIcon} /> },
+    { name: 'row.svg', component: <Icon name={rowIcon} /> },
+    { name: 'rss.svg', component: <Icon name={rssIcon} /> },
+    { name: 'rule.svg', component: <Icon name={ruleIcon} /> },
+    { name: 'ruler.svg', component: <Icon name={rulerIcon} /> },
+    { name: 'satisfied.svg', component: <Icon name={satisfiedIcon} /> },
+    { name: 'save.svg', component: <Icon name={saveIcon} /> },
+    { name: 'saving.svg', component: <Icon name={savingIcon} /> },
+    { name: 'scanner.svg', component: <Icon name={scannerIcon} /> },
+    { name: 'screen.svg', component: <Icon name={screenIcon} /> },
+    { name: 'security.svg', component: <Icon name={securityIcon} /> },
+    { name: 'select-all.svg', component: <Icon name={select_allIcon} /> },
+    { name: 'semaphore.svg', component: <Icon name={semaphoreIcon} /> },
+    { name: 'server.svg', component: <Icon name={serverIcon} /> },
+    { name: 'settings.svg', component: <Icon name={settingsIcon} /> },
+    { name: 'share.svg', component: <Icon name={shareIcon} /> },
+    { name: 'shift-key.svg', component: <Icon name={shift_keyIcon} /> },
+    { name: 'shift.svg', component: <Icon name={shiftIcon} /> },
+    { name: 'show-blocks.svg', component: <Icon name={show_blocksIcon} /> },
+    { name: 'show.svg', component: <Icon name={showIcon} /> },
+    { name: 'sort-down.svg', component: <Icon name={sort_downIcon} /> },
+    { name: 'sort-up.svg', component: <Icon name={sort_upIcon} /> },
+    { name: 'spacebar.svg', component: <Icon name={spacebarIcon} /> },
+    { name: 'special-character.svg', component: <Icon name={special_characterIcon} /> },
+    { name: 'spray.svg', component: <Icon name={sprayIcon} /> },
+    { name: 'star-empty.svg', component: <Icon name={star_emptyIcon} /> },
+    { name: 'star.svg', component: <Icon name={starIcon} /> },
+    { name: 'state.svg', component: <Icon name={stateIcon} /> },
+    { name: 'stop.svg', component: <Icon name={stopIcon} /> },
+    { name: 'strickthrough.svg', component: <Icon name={strickthroughIcon} /> },
+    { name: 'sub-left.svg', component: <Icon name={sub_leftIcon} /> },
+    { name: 'sub-right.svg', component: <Icon name={sub_rightIcon} /> },
+    { name: 'subheading.svg', component: <Icon name={subheadingIcon} /> },
+    { name: 'subindex.svg', component: <Icon name={subindexIcon} /> },
+    { name: 'superindex.svg', component: <Icon name={superindexIcon} /> },
+    { name: 'sync.svg', component: <Icon name={syncIcon} /> },
+    { name: 'tab-backwards.svg', component: <Icon name={tab_backwardsIcon} /> },
+    { name: 'tab.svg', component: <Icon name={tabIcon} /> },
+    { name: 'table-header.svg', component: <Icon name={table_headerIcon} /> },
+    { name: 'table.svg', component: <Icon name={tableIcon} /> },
+    { name: 'tablet.svg', component: <Icon name={tabletIcon} /> },
+    { name: 'tag.svg', component: <Icon name={tagIcon} /> },
+    { name: 'target.svg', component: <Icon name={targetIcon} /> },
+    { name: 'television.svg', component: <Icon name={televisionIcon} /> },
+    { name: 'text.svg', component: <Icon name={textIcon} /> },
+    { name: 'theme.svg', component: <Icon name={themeIcon} /> },
+    { name: 'tiny.svg', component: <Icon name={tinyIcon} /> },
+    { name: 'toc.svg', component: <Icon name={tocIcon} /> },
+    { name: 'translate.svg', component: <Icon name={translateIcon} /> },
+    { name: 'triangle.svg', component: <Icon name={triangleIcon} /> },
+    { name: 'trolley-full.svg', component: <Icon name={trolley_fullIcon} /> },
+    { name: 'trolley.svg', component: <Icon name={trolleyIcon} /> },
+    { name: 'trophy.svg', component: <Icon name={trophyIcon} /> },
+    { name: 'tune.svg', component: <Icon name={tuneIcon} /> },
+    { name: 'underline.svg', component: <Icon name={underlineIcon} /> },
+    { name: 'undo.svg', component: <Icon name={undoIcon} /> },
+    { name: 'unlink.svg', component: <Icon name={unlinkIcon} /> },
+    { name: 'unlock.svg', component: <Icon name={unlockIcon} /> },
+    { name: 'up-key.svg', component: <Icon name={up_keyIcon} /> },
+    { name: 'up.svg', component: <Icon name={upIcon} /> },
+    { name: 'upload.svg', component: <Icon name={uploadIcon} /> },
+    { name: 'usb.svg', component: <Icon name={usbIcon} /> },
+    { name: 'user.svg', component: <Icon name={userIcon} /> },
+    { name: 'vertical.svg', component: <Icon name={verticalIcon} /> },
+    { name: 'video.svg', component: <Icon name={videoIcon} /> },
+    { name: 'videocamera-off.svg', component: <Icon name={videocamera_offIcon} /> },
+    { name: 'videocamera.svg', component: <Icon name={videocameraIcon} /> },
+    { name: 'volume-low.svg', component: <Icon name={volume_lowIcon} /> },
+    { name: 'volume-off.svg', component: <Icon name={volume_offIcon} /> },
+    { name: 'volume.svg', component: <Icon name={volumeIcon} /> },
+    { name: 'warning.svg', component: <Icon name={warningIcon} /> },
+    { name: 'watch-side.svg', component: <Icon name={watch_sideIcon} /> },
+    { name: 'watch.svg', component: <Icon name={watchIcon} /> },
+    { name: 'world.svg', component: <Icon name={worldIcon} /> },
+    { name: 'yield.svg', component: <Icon name={yieldIcon} /> },
+    { name: 'zoom-in.svg', component: <Icon name={zoom_inIcon} /> },
+    { name: 'zoom-off.svg', component: <Icon name={zoom_offIcon} /> },
+    { name: 'zoom-out.svg', component: <Icon name={zoom_outIcon} /> },
+    { name: 'zoom.svg', component: <Icon name={zoomIcon} /> },
+
+  ];
+
+  handleChange = e => this.setState({ filter: e.target.value });
+
+  render() {
+    return (
+      <Fragment>
+        <div className="filter">
+          <Icon name={zoomIcon} />
+          <input
+            type="text"
+            name="filter"
+            value={this.state.filter}
+            onChange={this.handleChange}
+          />
+        </div>
+        <div className="catalog">
+          {this.list
+            .filter(item => item.name.includes(this.state.filter))
+            .map(item => (
+              <div className="icon-info-wrapper">
+                {item.component}
+                <div className="icon-name">{item.name}</div>
+              </div>
+            ))}
+        </div>
+      </Fragment>
+    );
+  }
 }
+
 export default IconCatalog;
+    
