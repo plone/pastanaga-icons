@@ -155,6 +155,7 @@ import laptopIcon from '../icons/laptop.svg';
 import lastIcon from '../icons/last.svg';
 import left_keyIcon from '../icons/left-key.svg';
 import linkIcon from '../icons/link.svg';
+import list_arrowsIcon from '../icons/list-arrows.svg';
 import list_bulletIcon from '../icons/list-bullet.svg';
 import list_numberedIcon from '../icons/list-numbered.svg';
 import lock_offIcon from '../icons/lock-off.svg';
@@ -469,6 +470,7 @@ class IconCatalog extends Component {
     { name: 'last.svg', component: <Icon name={lastIcon} size='36px' /> },
     { name: 'left-key.svg', component: <Icon name={left_keyIcon} size='36px' /> },
     { name: 'link.svg', component: <Icon name={linkIcon} size='36px' /> },
+    { name: 'list-arrows.svg', component: <Icon name={list_arrowsIcon} size='36px' /> },
     { name: 'list-bullet.svg', component: <Icon name={list_bulletIcon} size='36px' /> },
     { name: 'list-numbered.svg', component: <Icon name={list_numberedIcon} size='36px' /> },
     { name: 'lock-off.svg', component: <Icon name={lock_offIcon} size='36px' /> },
