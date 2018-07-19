@@ -4,6 +4,7 @@ import accessibilityIcon from '../icons/accessibility.svg';
 import accessibleIcon from '../icons/accessible.svg';
 import add_documentIcon from '../icons/add-document.svg';
 import add_onIcon from '../icons/add-on.svg';
+import add_userIcon from '../icons/add-user.svg';
 import addIcon from '../icons/add.svg';
 import aheadIcon from '../icons/ahead.svg';
 import alarmIcon from '../icons/alarm.svg';
@@ -96,6 +97,7 @@ import editingIcon from '../icons/editing.svg';
 import emailIcon from '../icons/email.svg';
 import endIcon from '../icons/end.svg';
 import enterIcon from '../icons/enter.svg';
+import enterpriseIcon from '../icons/enterprise.svg';
 import envelopeIcon from '../icons/envelope.svg';
 import ereaserIcon from '../icons/ereaser.svg';
 import errorIcon from '../icons/error.svg';
@@ -132,10 +134,16 @@ import hideIcon from '../icons/hide.svg';
 import highlighterIcon from '../icons/highlighter.svg';
 import homeIcon from '../icons/home.svg';
 import horizontalIcon from '../icons/horizontal.svg';
+import image_fitIcon from '../icons/image-fit.svg';
+import image_fullIcon from '../icons/image-full.svg';
+import image_leftIcon from '../icons/image-left.svg';
+import image_rightIcon from '../icons/image-right.svg';
+import image_wideIcon from '../icons/image-wide.svg';
 import imageIcon from '../icons/image.svg';
 import imagesIcon from '../icons/images.svg';
 import inboxIcon from '../icons/inbox.svg';
 import indentIcon from '../icons/indent.svg';
+import indeterminateIcon from '../icons/indeterminate.svg';
 import infoIcon from '../icons/info.svg';
 import interfaceIcon from '../icons/interface.svg';
 import italicIcon from '../icons/italic.svg';
@@ -154,6 +162,7 @@ import lockIcon from '../icons/lock.svg';
 import log_outIcon from '../icons/log-out.svg';
 import maintenanceIcon from '../icons/maintenance.svg';
 import megaphoneIcon from '../icons/megaphone.svg';
+import menu_altIcon from '../icons/menu-alt.svg';
 import menuIcon from '../icons/menu.svg';
 import microphone_offIcon from '../icons/microphone-off.svg';
 import microphoneIcon from '../icons/microphone.svg';
@@ -187,6 +196,7 @@ import pencilIcon from '../icons/pencil.svg';
 import pendingIcon from '../icons/pending.svg';
 import playIcon from '../icons/play.svg';
 import ploneIcon from '../icons/plone.svg';
+import presentationIcon from '../icons/presentation.svg';
 import printerIcon from '../icons/printer.svg';
 import propertiesIcon from '../icons/properties.svg';
 import radio_checkedIcon from '../icons/radio-checked.svg';
@@ -225,6 +235,7 @@ import screenIcon from '../icons/screen.svg';
 import securityIcon from '../icons/security.svg';
 import select_allIcon from '../icons/select-all.svg';
 import semaphoreIcon from '../icons/semaphore.svg';
+import sendIcon from '../icons/send.svg';
 import serverIcon from '../icons/server.svg';
 import settingsIcon from '../icons/settings.svg';
 import shareIcon from '../icons/share.svg';
@@ -235,8 +246,11 @@ import showIcon from '../icons/show.svg';
 import sort_downIcon from '../icons/sort-down.svg';
 import sort_upIcon from '../icons/sort-up.svg';
 import spacebarIcon from '../icons/spacebar.svg';
+import spamIcon from '../icons/spam.svg';
 import special_characterIcon from '../icons/special-character.svg';
 import sprayIcon from '../icons/spray.svg';
+import spreadsheetIcon from '../icons/spreadsheet.svg';
+import spyIcon from '../icons/spy.svg';
 import star_emptyIcon from '../icons/star-empty.svg';
 import starIcon from '../icons/star.svg';
 import stateIcon from '../icons/state.svg';
@@ -275,6 +289,7 @@ import upIcon from '../icons/up.svg';
 import uploadIcon from '../icons/upload.svg';
 import usbIcon from '../icons/usb.svg';
 import userIcon from '../icons/user.svg';
+import verifiedIcon from '../icons/verified.svg';
 import verticalIcon from '../icons/vertical.svg';
 import videoIcon from '../icons/video.svg';
 import videocamera_offIcon from '../icons/videocamera-off.svg';
@@ -303,6 +318,7 @@ class IconCatalog extends Component {
     { name: 'accessible.svg', component: <Icon name={accessibleIcon} size='36px' /> },
     { name: 'add-document.svg', component: <Icon name={add_documentIcon} size='36px' /> },
     { name: 'add-on.svg', component: <Icon name={add_onIcon} size='36px' /> },
+    { name: 'add-user.svg', component: <Icon name={add_userIcon} size='36px' /> },
     { name: 'add.svg', component: <Icon name={addIcon} size='36px' /> },
     { name: 'ahead.svg', component: <Icon name={aheadIcon} size='36px' /> },
     { name: 'alarm.svg', component: <Icon name={alarmIcon} size='36px' /> },
@@ -395,6 +411,7 @@ class IconCatalog extends Component {
     { name: 'email.svg', component: <Icon name={emailIcon} size='36px' /> },
     { name: 'end.svg', component: <Icon name={endIcon} size='36px' /> },
     { name: 'enter.svg', component: <Icon name={enterIcon} size='36px' /> },
+    { name: 'enterprise.svg', component: <Icon name={enterpriseIcon} size='36px' /> },
     { name: 'envelope.svg', component: <Icon name={envelopeIcon} size='36px' /> },
     { name: 'ereaser.svg', component: <Icon name={ereaserIcon} size='36px' /> },
     { name: 'error.svg', component: <Icon name={errorIcon} size='36px' /> },
@@ -431,10 +448,16 @@ class IconCatalog extends Component {
     { name: 'highlighter.svg', component: <Icon name={highlighterIcon} size='36px' /> },
     { name: 'home.svg', component: <Icon name={homeIcon} size='36px' /> },
     { name: 'horizontal.svg', component: <Icon name={horizontalIcon} size='36px' /> },
+    { name: 'image-fit.svg', component: <Icon name={image_fitIcon} size='36px' /> },
+    { name: 'image-full.svg', component: <Icon name={image_fullIcon} size='36px' /> },
+    { name: 'image-left.svg', component: <Icon name={image_leftIcon} size='36px' /> },
+    { name: 'image-right.svg', component: <Icon name={image_rightIcon} size='36px' /> },
+    { name: 'image-wide.svg', component: <Icon name={image_wideIcon} size='36px' /> },
     { name: 'image.svg', component: <Icon name={imageIcon} size='36px' /> },
     { name: 'images.svg', component: <Icon name={imagesIcon} size='36px' /> },
     { name: 'inbox.svg', component: <Icon name={inboxIcon} size='36px' /> },
     { name: 'indent.svg', component: <Icon name={indentIcon} size='36px' /> },
+    { name: 'indeterminate.svg', component: <Icon name={indeterminateIcon} size='36px' /> },
     { name: 'info.svg', component: <Icon name={infoIcon} size='36px' /> },
     { name: 'interface.svg', component: <Icon name={interfaceIcon} size='36px' /> },
     { name: 'italic.svg', component: <Icon name={italicIcon} size='36px' /> },
@@ -453,6 +476,7 @@ class IconCatalog extends Component {
     { name: 'log-out.svg', component: <Icon name={log_outIcon} size='36px' /> },
     { name: 'maintenance.svg', component: <Icon name={maintenanceIcon} size='36px' /> },
     { name: 'megaphone.svg', component: <Icon name={megaphoneIcon} size='36px' /> },
+    { name: 'menu-alt.svg', component: <Icon name={menu_altIcon} size='36px' /> },
     { name: 'menu.svg', component: <Icon name={menuIcon} size='36px' /> },
     { name: 'microphone-off.svg', component: <Icon name={microphone_offIcon} size='36px' /> },
     { name: 'microphone.svg', component: <Icon name={microphoneIcon} size='36px' /> },
@@ -486,6 +510,7 @@ class IconCatalog extends Component {
     { name: 'pending.svg', component: <Icon name={pendingIcon} size='36px' /> },
     { name: 'play.svg', component: <Icon name={playIcon} size='36px' /> },
     { name: 'plone.svg', component: <Icon name={ploneIcon} size='36px' /> },
+    { name: 'presentation.svg', component: <Icon name={presentationIcon} size='36px' /> },
     { name: 'printer.svg', component: <Icon name={printerIcon} size='36px' /> },
     { name: 'properties.svg', component: <Icon name={propertiesIcon} size='36px' /> },
     { name: 'radio-checked.svg', component: <Icon name={radio_checkedIcon} size='36px' /> },
@@ -524,6 +549,7 @@ class IconCatalog extends Component {
     { name: 'security.svg', component: <Icon name={securityIcon} size='36px' /> },
     { name: 'select-all.svg', component: <Icon name={select_allIcon} size='36px' /> },
     { name: 'semaphore.svg', component: <Icon name={semaphoreIcon} size='36px' /> },
+    { name: 'send.svg', component: <Icon name={sendIcon} size='36px' /> },
     { name: 'server.svg', component: <Icon name={serverIcon} size='36px' /> },
     { name: 'settings.svg', component: <Icon name={settingsIcon} size='36px' /> },
     { name: 'share.svg', component: <Icon name={shareIcon} size='36px' /> },
@@ -534,8 +560,11 @@ class IconCatalog extends Component {
     { name: 'sort-down.svg', component: <Icon name={sort_downIcon} size='36px' /> },
     { name: 'sort-up.svg', component: <Icon name={sort_upIcon} size='36px' /> },
     { name: 'spacebar.svg', component: <Icon name={spacebarIcon} size='36px' /> },
+    { name: 'spam.svg', component: <Icon name={spamIcon} size='36px' /> },
     { name: 'special-character.svg', component: <Icon name={special_characterIcon} size='36px' /> },
     { name: 'spray.svg', component: <Icon name={sprayIcon} size='36px' /> },
+    { name: 'spreadsheet.svg', component: <Icon name={spreadsheetIcon} size='36px' /> },
+    { name: 'spy.svg', component: <Icon name={spyIcon} size='36px' /> },
     { name: 'star-empty.svg', component: <Icon name={star_emptyIcon} size='36px' /> },
     { name: 'star.svg', component: <Icon name={starIcon} size='36px' /> },
     { name: 'state.svg', component: <Icon name={stateIcon} size='36px' /> },
@@ -574,6 +603,7 @@ class IconCatalog extends Component {
     { name: 'upload.svg', component: <Icon name={uploadIcon} size='36px' /> },
     { name: 'usb.svg', component: <Icon name={usbIcon} size='36px' /> },
     { name: 'user.svg', component: <Icon name={userIcon} size='36px' /> },
+    { name: 'verified.svg', component: <Icon name={verifiedIcon} size='36px' /> },
     { name: 'vertical.svg', component: <Icon name={verticalIcon} size='36px' /> },
     { name: 'video.svg', component: <Icon name={videoIcon} size='36px' /> },
     { name: 'videocamera-off.svg', component: <Icon name={videocamera_offIcon} size='36px' /> },
