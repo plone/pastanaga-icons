@@ -189,6 +189,7 @@ import outdentIcon from '../icons/outdent.svg';
 import packIcon from '../icons/pack.svg';
 import pageIcon from '../icons/page.svg';
 import paintIcon from '../icons/paint.svg';
+import paragraphIcon from '../icons/paragraph.svg';
 import pasteIcon from '../icons/paste.svg';
 import pauseIcon from '../icons/pause.svg';
 import paymentIcon from '../icons/payment.svg';
@@ -504,6 +505,7 @@ class IconCatalog extends Component {
     { name: 'pack.svg', component: <Icon name={packIcon} size='36px' /> },
     { name: 'page.svg', component: <Icon name={pageIcon} size='36px' /> },
     { name: 'paint.svg', component: <Icon name={paintIcon} size='36px' /> },
+    { name: 'paragraph.svg', component: <Icon name={paragraphIcon} size='36px' /> },
     { name: 'paste.svg', component: <Icon name={pasteIcon} size='36px' /> },
     { name: 'pause.svg', component: <Icon name={pauseIcon} size='36px' /> },
     { name: 'payment.svg', component: <Icon name={paymentIcon} size='36px' /> },
