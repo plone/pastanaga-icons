@@ -201,6 +201,7 @@ import ploneIcon from '../icons/plone.svg';
 import presentationIcon from '../icons/presentation.svg';
 import printerIcon from '../icons/printer.svg';
 import propertiesIcon from '../icons/properties.svg';
+import quoteIcon from '../icons/quote.svg';
 import radio_checkedIcon from '../icons/radio-checked.svg';
 import radio_disabledIcon from '../icons/radio-disabled.svg';
 import radio_indeterminateIcon from '../icons/radio-indeterminate.svg';
@@ -518,6 +519,7 @@ class IconCatalog extends Component {
     { name: 'presentation.svg', component: <Icon name={presentationIcon} size='36px' /> },
     { name: 'printer.svg', component: <Icon name={printerIcon} size='36px' /> },
     { name: 'properties.svg', component: <Icon name={propertiesIcon} size='36px' /> },
+    { name: 'quote.svg', component: <Icon name={quoteIcon} size='36px' /> },
     { name: 'radio-checked.svg', component: <Icon name={radio_checkedIcon} size='36px' /> },
     { name: 'radio-disabled.svg', component: <Icon name={radio_disabledIcon} size='36px' /> },
     { name: 'radio-indeterminate.svg', component: <Icon name={radio_indeterminateIcon} size='36px' /> },
