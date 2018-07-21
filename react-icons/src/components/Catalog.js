@@ -262,6 +262,7 @@ import sub_leftIcon from '../icons/sub-left.svg';
 import sub_rightIcon from '../icons/sub-right.svg';
 import subheadingIcon from '../icons/subheading.svg';
 import subindexIcon from '../icons/subindex.svg';
+import subtextIcon from '../icons/subtext.svg';
 import superindexIcon from '../icons/superindex.svg';
 import syncIcon from '../icons/sync.svg';
 import tab_backwardsIcon from '../icons/tab-backwards.svg';
@@ -578,6 +579,7 @@ class IconCatalog extends Component {
     { name: 'sub-right.svg', component: <Icon name={sub_rightIcon} size='36px' /> },
     { name: 'subheading.svg', component: <Icon name={subheadingIcon} size='36px' /> },
     { name: 'subindex.svg', component: <Icon name={subindexIcon} size='36px' /> },
+    { name: 'subtext.svg', component: <Icon name={subtextIcon} size='36px' /> },
     { name: 'superindex.svg', component: <Icon name={superindexIcon} size='36px' /> },
     { name: 'sync.svg', component: <Icon name={syncIcon} size='36px' /> },
     { name: 'tab-backwards.svg', component: <Icon name={tab_backwardsIcon} size='36px' /> },
