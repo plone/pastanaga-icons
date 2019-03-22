@@ -87,6 +87,8 @@ import delightedIcon from '../icons/delighted.svg';
 import disconnectedIcon from '../icons/disconnected.svg';
 import discussionIcon from '../icons/discussion.svg';
 import dissatisfiedIcon from '../icons/dissatisfied.svg';
+import divide_horizontalIcon from '../icons/divide-horizontal.svg';
+import divide_verticalIcon from '../icons/divide-vertical.svg';
 import dotsIcon from '../icons/dots.svg';
 import doument_detailsIcon from '../icons/doument-details.svg';
 import down_keyIcon from '../icons/down-key.svg';
@@ -130,6 +132,7 @@ import headset_microphoneIcon from '../icons/headset-microphone.svg';
 import headsetIcon from '../icons/headset.svg';
 import heartIcon from '../icons/heart.svg';
 import helpIcon from '../icons/help.svg';
+import heroIcon from '../icons/hero.svg';
 import hideIcon from '../icons/hide.svg';
 import highlighterIcon from '../icons/highlighter.svg';
 import homeIcon from '../icons/home.svg';
@@ -246,6 +249,7 @@ import shift_keyIcon from '../icons/shift-key.svg';
 import shiftIcon from '../icons/shift.svg';
 import show_blocksIcon from '../icons/show-blocks.svg';
 import showIcon from '../icons/show.svg';
+import sliderIcon from '../icons/slider.svg';
 import sort_downIcon from '../icons/sort-down.svg';
 import sort_upIcon from '../icons/sort-up.svg';
 import spacebarIcon from '../icons/spacebar.svg';
@@ -264,6 +268,7 @@ import sub_rightIcon from '../icons/sub-right.svg';
 import subheadingIcon from '../icons/subheading.svg';
 import subindexIcon from '../icons/subindex.svg';
 import subtextIcon from '../icons/subtext.svg';
+import summaryIcon from '../icons/summary.svg';
 import superindexIcon from '../icons/superindex.svg';
 import syncIcon from '../icons/sync.svg';
 import tab_backwardsIcon from '../icons/tab-backwards.svg';
@@ -405,6 +410,8 @@ class IconCatalog extends Component {
     { name: 'disconnected.svg', component: <Icon name={disconnectedIcon} size='36px' /> },
     { name: 'discussion.svg', component: <Icon name={discussionIcon} size='36px' /> },
     { name: 'dissatisfied.svg', component: <Icon name={dissatisfiedIcon} size='36px' /> },
+    { name: 'divide-horizontal.svg', component: <Icon name={divide_horizontalIcon} size='36px' /> },
+    { name: 'divide-vertical.svg', component: <Icon name={divide_verticalIcon} size='36px' /> },
     { name: 'dots.svg', component: <Icon name={dotsIcon} size='36px' /> },
     { name: 'doument-details.svg', component: <Icon name={doument_detailsIcon} size='36px' /> },
     { name: 'down-key.svg', component: <Icon name={down_keyIcon} size='36px' /> },
@@ -448,6 +455,7 @@ class IconCatalog extends Component {
     { name: 'headset.svg', component: <Icon name={headsetIcon} size='36px' /> },
     { name: 'heart.svg', component: <Icon name={heartIcon} size='36px' /> },
     { name: 'help.svg', component: <Icon name={helpIcon} size='36px' /> },
+    { name: 'hero.svg', component: <Icon name={heroIcon} size='36px' /> },
     { name: 'hide.svg', component: <Icon name={hideIcon} size='36px' /> },
     { name: 'highlighter.svg', component: <Icon name={highlighterIcon} size='36px' /> },
     { name: 'home.svg', component: <Icon name={homeIcon} size='36px' /> },
@@ -564,6 +572,7 @@ class IconCatalog extends Component {
     { name: 'shift.svg', component: <Icon name={shiftIcon} size='36px' /> },
     { name: 'show-blocks.svg', component: <Icon name={show_blocksIcon} size='36px' /> },
     { name: 'show.svg', component: <Icon name={showIcon} size='36px' /> },
+    { name: 'slider.svg', component: <Icon name={sliderIcon} size='36px' /> },
     { name: 'sort-down.svg', component: <Icon name={sort_downIcon} size='36px' /> },
     { name: 'sort-up.svg', component: <Icon name={sort_upIcon} size='36px' /> },
     { name: 'spacebar.svg', component: <Icon name={spacebarIcon} size='36px' /> },
@@ -582,6 +591,7 @@ class IconCatalog extends Component {
     { name: 'subheading.svg', component: <Icon name={subheadingIcon} size='36px' /> },
     { name: 'subindex.svg', component: <Icon name={subindexIcon} size='36px' /> },
     { name: 'subtext.svg', component: <Icon name={subtextIcon} size='36px' /> },
+    { name: 'summary.svg', component: <Icon name={summaryIcon} size='36px' /> },
     { name: 'superindex.svg', component: <Icon name={superindexIcon} size='36px' /> },
     { name: 'sync.svg', component: <Icon name={syncIcon} size='36px' /> },
     { name: 'tab-backwards.svg', component: <Icon name={tab_backwardsIcon} size='36px' /> },
