@@ -13,8 +13,10 @@ import align_centerIcon from '../icons/align-center.svg';
 import align_justifyIcon from '../icons/align-justify.svg';
 import align_leftIcon from '../icons/align-left.svg';
 import align_rightIcon from '../icons/align-right.svg';
+import annotationIcon from '../icons/annotation.svg';
 import applicationIcon from '../icons/application.svg';
 import appsIcon from '../icons/apps.svg';
+import asteriskIcon from '../icons/asterisk.svg';
 import attachmentIcon from '../icons/attachment.svg';
 import audioIcon from '../icons/audio.svg';
 import back_downIcon from '../icons/back-down.svg';
@@ -39,6 +41,7 @@ import calendarIcon from '../icons/calendar.svg';
 import cameraIcon from '../icons/camera.svg';
 import cap_locks_keyIcon from '../icons/cap-locks-key.svg';
 import caps_lockIcon from '../icons/caps-lock.svg';
+import cardsIcon from '../icons/cards.svg';
 import cautionIcon from '../icons/caution.svg';
 import cdIcon from '../icons/cd.svg';
 import cellIcon from '../icons/cell.svg';
@@ -48,6 +51,7 @@ import checkbox_disabledIcon from '../icons/checkbox-disabled.svg';
 import checkbox_indeterminateIcon from '../icons/checkbox-indeterminate.svg';
 import checkbox_uncheckedIcon from '../icons/checkbox-unchecked.svg';
 import chronoIcon from '../icons/chrono.svg';
+import chunkIcon from '../icons/chunk.svg';
 import circle_bottomIcon from '../icons/circle-bottom.svg';
 import circle_dismissIcon from '../icons/circle-dismiss.svg';
 import circle_leftIcon from '../icons/circle-left.svg';
@@ -124,6 +128,7 @@ import frustratedIcon from '../icons/frustrated.svg';
 import fullscreenIcon from '../icons/fullscreen.svg';
 import functionIcon from '../icons/function.svg';
 import globeIcon from '../icons/globe.svg';
+import gridIcon from '../icons/grid.svg';
 import groupIcon from '../icons/group.svg';
 import guillotinaIcon from '../icons/guillotina.svg';
 import half_starIcon from '../icons/half-star.svg';
@@ -165,6 +170,7 @@ import lock_offIcon from '../icons/lock-off.svg';
 import lockIcon from '../icons/lock.svg';
 import log_outIcon from '../icons/log-out.svg';
 import maintenanceIcon from '../icons/maintenance.svg';
+import mapIcon from '../icons/map.svg';
 import megaphoneIcon from '../icons/megaphone.svg';
 import menu_altIcon from '../icons/menu-alt.svg';
 import menuIcon from '../icons/menu.svg';
@@ -249,6 +255,7 @@ import shift_keyIcon from '../icons/shift-key.svg';
 import shiftIcon from '../icons/shift.svg';
 import show_blocksIcon from '../icons/show-blocks.svg';
 import showIcon from '../icons/show.svg';
+import showcaseIcon from '../icons/showcase.svg';
 import sliderIcon from '../icons/slider.svg';
 import sort_downIcon from '../icons/sort-down.svg';
 import sort_upIcon from '../icons/sort-up.svg';
@@ -336,8 +343,10 @@ class IconCatalog extends Component {
     { name: 'align-justify.svg', component: <Icon name={align_justifyIcon} size='36px' /> },
     { name: 'align-left.svg', component: <Icon name={align_leftIcon} size='36px' /> },
     { name: 'align-right.svg', component: <Icon name={align_rightIcon} size='36px' /> },
+    { name: 'annotation.svg', component: <Icon name={annotationIcon} size='36px' /> },
     { name: 'application.svg', component: <Icon name={applicationIcon} size='36px' /> },
     { name: 'apps.svg', component: <Icon name={appsIcon} size='36px' /> },
+    { name: 'asterisk.svg', component: <Icon name={asteriskIcon} size='36px' /> },
     { name: 'attachment.svg', component: <Icon name={attachmentIcon} size='36px' /> },
     { name: 'audio.svg', component: <Icon name={audioIcon} size='36px' /> },
     { name: 'back-down.svg', component: <Icon name={back_downIcon} size='36px' /> },
@@ -362,6 +371,7 @@ class IconCatalog extends Component {
     { name: 'camera.svg', component: <Icon name={cameraIcon} size='36px' /> },
     { name: 'cap-locks-key.svg', component: <Icon name={cap_locks_keyIcon} size='36px' /> },
     { name: 'caps-lock.svg', component: <Icon name={caps_lockIcon} size='36px' /> },
+    { name: 'cards.svg', component: <Icon name={cardsIcon} size='36px' /> },
     { name: 'caution.svg', component: <Icon name={cautionIcon} size='36px' /> },
     { name: 'cd.svg', component: <Icon name={cdIcon} size='36px' /> },
     { name: 'cell.svg', component: <Icon name={cellIcon} size='36px' /> },
@@ -371,6 +381,7 @@ class IconCatalog extends Component {
     { name: 'checkbox-indeterminate.svg', component: <Icon name={checkbox_indeterminateIcon} size='36px' /> },
     { name: 'checkbox-unchecked.svg', component: <Icon name={checkbox_uncheckedIcon} size='36px' /> },
     { name: 'chrono.svg', component: <Icon name={chronoIcon} size='36px' /> },
+    { name: 'chunk.svg', component: <Icon name={chunkIcon} size='36px' /> },
     { name: 'circle-bottom.svg', component: <Icon name={circle_bottomIcon} size='36px' /> },
     { name: 'circle-dismiss.svg', component: <Icon name={circle_dismissIcon} size='36px' /> },
     { name: 'circle-left.svg', component: <Icon name={circle_leftIcon} size='36px' /> },
@@ -447,6 +458,7 @@ class IconCatalog extends Component {
     { name: 'fullscreen.svg', component: <Icon name={fullscreenIcon} size='36px' /> },
     { name: 'function.svg', component: <Icon name={functionIcon} size='36px' /> },
     { name: 'globe.svg', component: <Icon name={globeIcon} size='36px' /> },
+    { name: 'grid.svg', component: <Icon name={gridIcon} size='36px' /> },
     { name: 'group.svg', component: <Icon name={groupIcon} size='36px' /> },
     { name: 'guillotina.svg', component: <Icon name={guillotinaIcon} size='36px' /> },
     { name: 'half-star.svg', component: <Icon name={half_starIcon} size='36px' /> },
@@ -488,6 +500,7 @@ class IconCatalog extends Component {
     { name: 'lock.svg', component: <Icon name={lockIcon} size='36px' /> },
     { name: 'log-out.svg', component: <Icon name={log_outIcon} size='36px' /> },
     { name: 'maintenance.svg', component: <Icon name={maintenanceIcon} size='36px' /> },
+    { name: 'map.svg', component: <Icon name={mapIcon} size='36px' /> },
     { name: 'megaphone.svg', component: <Icon name={megaphoneIcon} size='36px' /> },
     { name: 'menu-alt.svg', component: <Icon name={menu_altIcon} size='36px' /> },
     { name: 'menu.svg', component: <Icon name={menuIcon} size='36px' /> },
@@ -572,6 +585,7 @@ class IconCatalog extends Component {
     { name: 'shift.svg', component: <Icon name={shiftIcon} size='36px' /> },
     { name: 'show-blocks.svg', component: <Icon name={show_blocksIcon} size='36px' /> },
     { name: 'show.svg', component: <Icon name={showIcon} size='36px' /> },
+    { name: 'showcase.svg', component: <Icon name={showcaseIcon} size='36px' /> },
     { name: 'slider.svg', component: <Icon name={sliderIcon} size='36px' /> },
     { name: 'sort-down.svg', component: <Icon name={sort_downIcon} size='36px' /> },
     { name: 'sort-up.svg', component: <Icon name={sort_upIcon} size='36px' /> },
