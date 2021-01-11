@@ -68,6 +68,9 @@ import codeIcon from '../icons/code.svg';
 import collapse_downIcon from '../icons/collapse-down.svg';
 import collapse_upIcon from '../icons/collapse-up.svg';
 import collectionIcon from '../icons/collection.svg';
+import column_afterIcon from '../icons/column-after.svg';
+import column_beforeIcon from '../icons/column-before.svg';
+import column_deleteIcon from '../icons/column-delete.svg';
 import columnIcon from '../icons/column.svg';
 import commandIcon from '../icons/command.svg';
 import commentIcon from '../icons/comment.svg';
@@ -235,6 +238,9 @@ import retractIcon from '../icons/retract.svg';
 import rewindIcon from '../icons/rewind.svg';
 import right_keyIcon from '../icons/right-key.svg';
 import rollerIcon from '../icons/roller.svg';
+import row_afterIcon from '../icons/row-after.svg';
+import row_beforeIcon from '../icons/row-before.svg';
+import row_deleteIcon from '../icons/row-delete.svg';
 import rowIcon from '../icons/row.svg';
 import rssIcon from '../icons/rss.svg';
 import ruleIcon from '../icons/rule.svg';
@@ -398,6 +404,9 @@ class IconCatalog extends Component {
     { name: 'collapse-down.svg', component: <Icon name={collapse_downIcon} size='36px' /> },
     { name: 'collapse-up.svg', component: <Icon name={collapse_upIcon} size='36px' /> },
     { name: 'collection.svg', component: <Icon name={collectionIcon} size='36px' /> },
+    { name: 'column-after.svg', component: <Icon name={column_afterIcon} size='36px' /> },
+    { name: 'column-before.svg', component: <Icon name={column_beforeIcon} size='36px' /> },
+    { name: 'column-delete.svg', component: <Icon name={column_deleteIcon} size='36px' /> },
     { name: 'column.svg', component: <Icon name={columnIcon} size='36px' /> },
     { name: 'command.svg', component: <Icon name={commandIcon} size='36px' /> },
     { name: 'comment.svg', component: <Icon name={commentIcon} size='36px' /> },
@@ -565,6 +574,9 @@ class IconCatalog extends Component {
     { name: 'rewind.svg', component: <Icon name={rewindIcon} size='36px' /> },
     { name: 'right-key.svg', component: <Icon name={right_keyIcon} size='36px' /> },
     { name: 'roller.svg', component: <Icon name={rollerIcon} size='36px' /> },
+    { name: 'row-after.svg', component: <Icon name={row_afterIcon} size='36px' /> },
+    { name: 'row-before.svg', component: <Icon name={row_beforeIcon} size='36px' /> },
+    { name: 'row-delete.svg', component: <Icon name={row_deleteIcon} size='36px' /> },
     { name: 'row.svg', component: <Icon name={rowIcon} size='36px' /> },
     { name: 'rss.svg', component: <Icon name={rssIcon} size='36px' /> },
     { name: 'rule.svg', component: <Icon name={ruleIcon} size='36px' /> },
