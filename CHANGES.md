@@ -1,0 +1,1 @@
+- Add thumbs up/down icons [ThomasBork]
